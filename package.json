@@ -4,7 +4,8 @@
   "description": "Making Blockchain with TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " tsc-watch --onSuccess \" node dist/index.js\" "
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/styu12/Typechain/issues"
   },
-  "homepage": "https://github.com/styu12/Typechain#readme"
+  "homepage": "https://github.com/styu12/Typechain#readme",
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "tsc-watch": "^4.6.0"
+  },
+  "dependencies": {
+    "typescript": "^4.5.4"
+  }
 }
